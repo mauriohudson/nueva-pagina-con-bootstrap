@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Playfair+Display:wght@800&display=swap"
@@ -68,7 +67,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-4 fw-bold text-uppercase active"
+                  class="nav-link fs-4 fw-bold text-uppercase"
                   href="nosotros.html"
                   >nosotros</a
                 >
@@ -87,7 +86,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-4 fw-bold text-uppercase"
+                  class="nav-link fs-4 fw-bold text-uppercase active"
                   href="contactos.html"
                   >contactos</a
                 >
@@ -98,28 +97,69 @@
       </nav>
     </header>
     <!-- =============================================================================================================================== -->
-    <!-- NOSOTROS -->
+    <!-- CONTACTO -->
     <!-- =============================================================================================================================== -->
-    <section class="section section1">
-      <div>
-        <h1 class="title display-2 text-uppercase">
-          <p class="my-2">Filo<span class="px-1 fw-bold">sofia</span></p>
-        </h1>
-        <p class="p1 lead">
-          Nos preocupamos de que nuestros clientes tengan la mejor experiencia
-          <br class="d-none d-lg-block" />
-          cuando nos visitan en cada uno de nuestros locales,
-          <br class="d-none d-lg-block" />
-          creemos que es la mejor manera de que pasen
-          <br class="d-none d-lg-block" />
-          un buen momento junto a familia o amigos.
-          <br class="d-none d-lg-block" />
-          Nos capacitamos para dar un buen servicio,
-          <br class="d-none d-lg-block" />
-          brindando variedades de cervezas artesanales.
-        </p>
+    <div class="container__contactos">
+      <div class="circle"></div>
+      <div class="formulario__container">
+        <div class="row">
+          <div class="col">
+            <div class="section__form__title">
+              <h1 class="display-2 my-2">
+                Contacta<span class="px-1 fw-bold">nos</span>
+              </h1>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="nombrelInput" class="label-form"
+                ><p class="fs-4 my-2">
+                  Cual Es<span class="px-1 fw-bold m-2">Tu Nombre</span>?
+                </p></label
+              >
+              <input
+                type="nombre"
+                id="nombreInput"
+                class="form-control bg-dark form-control-sm"
+                placeholder="Escribe tu nombre"
+              />
+            </div>
+            <div class="mb-3 text-start">
+              <label for="emailInput" class="label-form"
+                ><p class="fs-4 my-2">
+                  Cual Es<span class="px-1 fw-bold m-2">Tu Email</span>?
+                </p></label
+              >
+              <input
+                type="email"
+                id="emailInput"
+                class="form-control bg-dark"
+                placeholder="Escribe tu email"
+              />
+            </div>
+
+            <div class="mb-3 text-start">
+              <label for="comentId" class="label-form"
+                ><p class="fs-4 my-2">
+                  Como<span class="px-1 fw-bold m-2">Podemos Ayudarte</span>?
+                </p></label
+              >
+              <textarea
+                class="form-control bg-dark"
+                placeholder="Escribe un comentario"
+                name=""
+                id="comentId"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="label-form"></label>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
     <!-- =============================================================================================================================== -->
     <!-- FOOTER -->
     <!-- =============================================================================================================================== -->
