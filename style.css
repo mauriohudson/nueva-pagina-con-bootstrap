@@ -239,45 +239,65 @@ header {
 }
 
 
-.icon {
-    display: inline-block;
+.iconi {
+    color: #fff;
+    /* display: inline-block; */
     font-size: 50px;
-    animation: float 5s ease-in-out infinite;
+    /* animation: float 5s ease-in-out infinite; */
+    animation: first_color .5s ease-in-out infinite alternate;
 }
 
 .iconf {
-    color: #4267B2;
+    color: #fff;
+    /* display: inline-block; */
+    font-size: 50px;
+    /* animation: float 5s ease-in-out infinite; */
+    animation: second_color .5s ease-in-out infinite alternate;
 }
 
 .iconw {
-    color: #25D366;
+    color: #fff;
+    /* display: inline-block; */
+    font-size: 50px;
+    /* animation: float 5s ease-in-out infinite; */
+    animation: third_color .5s ease-in-out infinite alternate;
 }
 
-.iconi {
-    color: #E1306C;
-}
 
-.ri-facebook-circle-line {
-    animation-delay: 1s;
-}
 
-.ri-whatsapp-line {
-    animation-delay: 2s;
-}
-
-@keyframes float {
+@keyframes first_color {
     0% {
-        transform: translateY(0);
+        text-shadow: 0 0 10px #ff1177,
+        0 0 20px #d6249f, 0 0 30px #285AEB
     }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
     100% {
-        transform: translateY(0);
+        text-shadow: 0 0 10px #ff1177,
+        0 0 20px #d6249f, 0 0 15px #285AEB
     }
 }
+
+@keyframes second_color {
+    0% {
+        text-shadow: 0 0 10px #1877f2,
+        0 0 20px #1459b3, 0 0 30px #179bff
+    }
+    100% {
+        text-shadow: 0 0 10px #1877f2,
+        0 0 20px #1459b3, 0 0 15px #179bff;
+    }
+}
+
+@keyframes third_color {
+    0% {
+        text-shadow: 0 0 10px #25d366,
+        0 0 20px #48ee85, 0 0 30px #0ec0a5
+    }
+    100% {
+        text-shadow: 0 0 10px #25d366,
+        0 0 20px #48ee85, 0 0 15px #0ec0a5; 
+    }
+}
+
 /* =========================================================================================================== */
 /* FOOTER FIN */
 /* =========================================================================================================== */
