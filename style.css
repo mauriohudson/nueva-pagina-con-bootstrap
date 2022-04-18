@@ -13,6 +13,7 @@ body {
 /* =========================================================================================================== */
 header {
     font-family: 'Old Standard TT', serif;
+    opacity: .7;
 }
 
 .navitem {
@@ -32,6 +33,77 @@ header {
 /* =========================================================================================================== */
 /* Home */
 /* =========================================================================================================== */
+.def1 {
+    background-image: url(img/def11.png);
+}
+
+.def2 {
+    background-image: url(img/def22.png);
+}
+
+.def3 {
+    background-image: url(img/def33.png);
+}
+
+.home .carousel-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+.home .carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.home .carouselExampleIndicators {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.home .carousel-control-next,
+.home .carousel-control-prev {
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.home .carousel-control-next img,
+.home .carousel-control-prev img {
+    width: 40px;
+}
+
+.home .carousel-control-next {
+    right: -90px;
+}
+
+.home .carousel-control-prev {
+    left: -90px;
+}
+
+.home .active {
+    border-color: #ffffff;
+    transform: scale(1.2);
+}
+
 .home .carousel-inner .carousel-item {
     height: 100vh;
     background-size: cover;
@@ -110,8 +182,6 @@ header {
 /* =========================================================================================================== */
 /* MENU */
 /* =========================================================================================================== */
-
-
 
 .main__menu {
     width: 100%;
@@ -255,6 +325,39 @@ header {
     font-size: 20px;
     color: white;
 }
+
+
+.section .title p {
+    animation: desvanecerseIzquierda 1s ease forwards;
+}
+
+.section p {
+    animation: desvanecerseDerecha 1s ease forwards;
+}
+
+@keyframes desvanecerseIzquierda {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes desvanecerseDerecha {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 /* =========================================================================================================== */
 /* NOSOTROS FIN */
 /* =========================================================================================================== */
@@ -316,6 +419,16 @@ header {
 
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
+    .home .carousel-control-next,
+    .home .carousel-control-prev{
+        display: none;
+    }
+
+    .home .carouselExampleIndicators {
+        height: 40px;
+        width: 40px;
+    }
+
     .home .carousel-inner .carousel-item {
         height: 50vh;
     }
